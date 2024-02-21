@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librería Los Lectores</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Librería Los Lectores - Registro de Ventas</h1>
+        <form id="ventaForm">
+            <label for="nombreCliente">Nombre del Cliente:</label>
+            <input type="text" id="nombreCliente" required>
+
+            <label for="generoCliente">Género del Cliente:</label>
+            <select id="generoCliente" required>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+            </select>
+
+            <label for="tituloLibro">Título del Libro:</label>
+            <input type="text" id="tituloLibro" required>
+
+            <label for="tipoLibro">Tipo de Libro:</label>
+            <select id="tipoLibro" required>
+                <option value="1">Ficción</option>
+                <option value="2">Novelas</option>
+                <option value="3">Cuentos</option>
+                <option value="4">Física Cuántica</option>
+            </select>
+
+            <label for="cantidadLibros">Cantidad de Libros:</label>
+            <input type="number" id="cantidadLibros" required>
+
+            <button type="button" onclick="registrarVenta()">Registrar Venta</button>
+        </form>
+
+        <div id="resultados">
+            <!-- Aquí se mostrarán los resultados de las ventas -->
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
